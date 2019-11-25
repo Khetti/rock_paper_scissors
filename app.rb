@@ -23,3 +23,55 @@ end
 get '/rules' do
   erb(:rules)
 end
+
+# creating the play links. the first choice is simply a link to a page,
+# where the follow-up page will actually create our Game object and
+# run our .play() method.
+
+get '/play/rock' do
+  erb(:rock)
+end
+
+get '/play/scissors' do
+  erb(:scissors)
+end
+
+get '/play/paper' do
+  erb(:paper)
+end
+
+get '/play/rock/rock' do
+  erb(:rock_rock)
+end
+
+get '/play/rock/scissors' do
+  erb(:rock_scissors)
+end
+
+get '/play/rock/paper' do
+  erb(:rock_paper)
+end
+
+get '/play/scissors/scissors' do
+  erb(:scissors_scissors)
+end
+
+get '/play/scissors/rock' do
+  erb(:scissors_rock)
+end
+
+get '/play/scissors/paper' do
+  erb(:scissors_paper)
+end
+
+get '/play/paper/paper' do
+  erb(:paper_paper)
+end
+
+get '/play/paper/rock' do
+  erb(:paper_rock)
+end
+
+get '/play/paper/scissors' do
+  erb(:paper_scissors)
+end
