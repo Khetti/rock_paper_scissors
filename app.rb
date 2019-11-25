@@ -41,10 +41,16 @@ get '/play/paper' do
 end
 
 get '/play/rock/rock' do
+  player1 = params['']
+  player2 = params['']
+  @result = Game.play(player1, player2)
   erb(:rock_rock)
 end
 
 get '/play/rock/scissors' do
+  player1 = params['']
+  player2 = params['']
+  @result = Game.play(player1, player2)
   erb(:rock_scissors)
 end
 
