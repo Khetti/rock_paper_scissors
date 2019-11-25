@@ -34,6 +34,7 @@ class Game
         return "Scissors wins!"
       when player1 == "paper" && player2 == "paper"
         return "Draw!"
+      end
   end
 
 end
