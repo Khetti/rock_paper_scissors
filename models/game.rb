@@ -17,23 +17,35 @@ class Game
   def self.play(player1, player2)
       case
         when player1 == "rock" && player2 == "scissors"
-          return "Rock wins!"
+          return "Scissors are useful for cutting lots
+          of things, but not rocks. Player 1 wins!"
         when player1 == "rock" && player2 == "paper"
-          return "Paper wins!"
+          return "Good old rock, nothing beats that!
+          Except paper of course. Player 2 wins!"
         when player1 == "rock" && player2 == "rock"
-          return "Draw!"
+          return "The scientific study of rocks is actually
+          a subset of geology called petrology. Oh, and this
+          game is a draw."
         when player1 == "scissors" && player2 == "paper"
-          return "Scissors wins!"
+          return "Like a hot knife through butter. Or
+          room temperature scissors through paper.
+          Player 1 wins!"
         when player1 == "scissors" && player2 == "rock"
-          return "Rock wins!"
+          return "Scissors are useful for cutting lots
+          of things, but not rocks. Player 2 wins!"
         when player1 == "scissors" && player2 == "scissors"
-          return "Draw!"
+          return "Be careful with those scissors or you
+          might... draw blood. It's a draw. The game is a
+          draw."
         when player1 == "paper" && player2 == "rock"
-          return "Paper wins!"
+          return "Good old rock, nothing beats that!
+          Except paper of course. Player 1 wins!"
         when player1 == "paper" && player2 == "scissors"
-          return "Scissors wins!"
+          return "Like a hot knife through butter. Or
+          room temperature scissors through paper.
+          Player 1 wins!"
         when player1 == "paper" && player2 == "paper"
-          return "Draw!"
+          return "You know what you can do on paper? Draw."
       end
   end
 
