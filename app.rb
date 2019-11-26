@@ -41,64 +41,64 @@ get '/play/paper' do
 end
 
 get '/play/rock/rock' do
-  player1 = params['rock']
-  player2 = params['rock']
+  player1 = 'rock'
+  player2 = 'rock'
   @result = Game.play(player1, player2)
   erb(:result)
 end
 
 get '/play/rock/scissors' do
-  player1 = params['rock']
-  player2 = params['scissors']
+  player1 = 'rock'
+  player2 = 'scissors'
   @result = Game.play(player1, player2)
   erb(:result)
 end
 
 get '/play/rock/paper' do
-  player1 = params['rock']
-  player2 = params['paper']
+  player1 = 'rock'
+  player2 = 'paper'
   @result = Game.play(player1, player2)
   erb(:result)
 end
 
 get '/play/scissors/scissors' do
-  player1 = params['scissors']
-  player2 = params['scissors']
+  player1 = 'scissors'
+  player2 = 'scissors'
   @result = Game.play(player1, player2)
   erb(:result)
 end
 
 get '/play/scissors/rock' do
-  player1 = params['scissors']
-  player2 = params['rock']
+  player1 = 'scissors'
+  player2 = 'rock'
   @result = Game.play(player1, player2)
   erb(:result)
 end
 
 get '/play/scissors/paper' do
-  player1 = params['scissors']
-  player2 = params['paper']
+  player1 = 'scissors'
+  player2 = 'paper'
   @result = Game.play(player1, player2)
   erb(:result)
 end
 
 get '/play/paper/paper' do
-  player1 = params['paper']
-  player2 = params['paper']
+  player1 = 'paper'
+  player2 = 'paper'
   @result = Game.play(player1, player2)
   erb(:result)
 end
 
 get '/play/paper/rock' do
-  player1 = params['paper']
-  player2 = params['rock']
+  player1 = 'paper'
+  player2 = 'rock'
   @result = Game.play(player1, player2)
   erb(:result)
 end
 
 get '/play/paper/scissors' do
-  player1 = params['paper']
-  player2 = params['scissors']
+  player1 = 'paper'
+  player2 = 'scissors'
   @result = Game.play(player1, player2)
   erb(:result)
 end
